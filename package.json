@@ -9,9 +9,9 @@
     "runtime": "nodejs6.10"
   },
   "scripts": {
+    "preinstall": "bash scripts/installPackages.sh",
     "deployUserList": "MODULE=users FUNCTION=userList npm run deploy",
-    "test":
-      "npm run build && mocha src/functions/**/*spec.js --reporter=spec -w --exclude src/functions/_helpers",
+    "test": "npm run build && mocha src/functions/**/*spec.js --reporter=spec -w --exclude src/functions/_helpers",
     "build": "tsc",
     "dist:cp": "bash scripts/distCp.sh",
     "dist:pack": "bash scripts/distPack.sh",
