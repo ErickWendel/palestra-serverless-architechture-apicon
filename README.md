@@ -37,11 +37,17 @@ Boilerplate base to AWS Lambda without frameworks architecture.
 │           ├── userList.spec.ts
 │           └── userList.ts
 └── tsconfig.json
-
 ```
+
 ## Deploy
 
-```MODULE=users FUNCTION=userList npm run deploy```
+`MODULE=users FUNCTION=userList npm run deploy`
+
+## Test
+
+`npm test` <br>
+
+`NODE_ENV=production npm test`
 
 ## Author
 
